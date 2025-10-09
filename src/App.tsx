@@ -52,7 +52,7 @@ export default function Home() {
   const [protectedData, setProtectedData] = useState<ProtectedData>();
   const [isLoading, setIsLoading] = useState(false);
 
-  // iExec Web3Mail app addresses by chain
+  // iExec Web3Mail iApp addresses by chain
   const web3MailAddresses = {
     134: "0x781482c39cce25546583eac4957fb7bf04c277d2", // iExec Sidechain (Bellecour)
     42161: "0xd5054a18565c4a9e5c1aa3ceb53258bd59d4c78c", // Arbitrum One
@@ -392,7 +392,7 @@ export default function Home() {
                       htmlFor="authorized_app"
                       className="block mb-2 font-medium text-gray-700"
                     >
-                      Authorized App Address *
+                      Authorized iApp Address *
                     </label>
                     <input
                       value={grantAccessData.authorizedApp}
@@ -404,16 +404,14 @@ export default function Home() {
                       }
                       type="text"
                       id="authorized_app"
-                      placeholder="Enter iExec app address (0x...)"
+                      placeholder="Enter iApp address (0x...)"
                       maxLength={42}
                       required
                     />
                     <div className="text-xs text-gray-500 mt-2 space-y-1">
-                      <p>
-                        application authorized to access your protected data.
-                      </p>
+                      <p>iApp authorized to access your protected data.</p>
                       <p className="text-gray-400 mt-1">
-                        App addresses vary by chain. Always verify before
+                        iApp addresses vary by chain. Always verify before
                         granting access.
                       </p>
                     </div>
@@ -508,17 +506,18 @@ export default function Home() {
                   </h3>
                   <div className="text-blue-800 space-y-2 text-sm">
                     <p>
-                      <strong>Dataset:</strong> {grantedAccess.dataset}
+                      <strong>Protected Data:</strong> {grantedAccess.dataset}
                     </p>
                     <p>
-                      <strong>Dataset Price:</strong>{" "}
+                      <strong>Protected Data Price:</strong>{" "}
                       {grantedAccess.datasetprice} nRLC
                     </p>
                     <p>
                       <strong>Volume:</strong> {grantedAccess.volume}
                     </p>
                     <p>
-                      <strong>App Restrict:</strong> {grantedAccess.apprestrict}
+                      <strong>iApp Restrict:</strong>{" "}
+                      {grantedAccess.apprestrict}
                     </p>
                     <p>
                       <strong>Workerpool Restrict:</strong>{" "}

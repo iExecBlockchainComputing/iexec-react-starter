@@ -50,7 +50,7 @@ VITE_PRIVY_APP_ID=your_privy_app_id
 npm run dev
 ```
 
-Your app will be available at [http://localhost:5173](http://localhost:5173) (default Vite port)
+Your app will be available at [http://localhost:5173](http://localhost:5173)
 
 ---
 
