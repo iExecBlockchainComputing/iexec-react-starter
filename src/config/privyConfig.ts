@@ -1,24 +1,6 @@
 import { arbitrum, arbitrumSepolia } from 'viem/chains';
 
-export const bellecour = {
-  id: 134,
-  name: 'iExec Sidechain',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'xRLC',
-    symbol: 'xRLC',
-  },
-  rpcUrls: {
-    public: { http: ['https://bellecour.iex.ec'] },
-    default: { http: ['https://bellecour.iex.ec'] },
-  },
-  blockExplorers: {
-    default: { name: 'Blockscout', url: 'https://blockscout-bellecour.iex.ec' },
-  },
-} as const;
-
 export const supportedChains = [
-  bellecour,
   arbitrumSepolia,
   arbitrum,
 ];
@@ -36,7 +18,7 @@ export const privyConfig = {
     // Supported chains
     supportedChains: supportedChains,
     // Default chain
-    defaultChain: bellecour,
+    defaultChain: arbitrumSepolia,
     // Login methods
     loginMethods: ['wallet'],
     // Create embedded wallets for users who don't have a wallet
@@ -55,7 +37,6 @@ export const privyConfig = {
 
 // Explorer slugs mapping for iExec explorer
 export const explorerSlugs: Record<number, string> = {
-  134: 'bellecour', // iExec Sidechain (Bellecour)
   42161: 'arbitrum-mainnet', // Arbitrum One
   421614: 'arbitrum-sepolia-testnet', // Arbitrum Sepolia
 };
