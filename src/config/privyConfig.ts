@@ -1,3 +1,4 @@
+import type { PrivyClientConfig } from '@privy-io/react-auth';
 import { arbitrum, arbitrumSepolia } from 'viem/chains';
 
 export const supportedChains = [
@@ -12,7 +13,7 @@ if (!projectId) {
   console.warn('You need to provide VITE_PRIVY_APP_ID env variable in .env file');
 }
 
-export const privyConfig = {
+export const privyConfig: { appId: string; config: PrivyClientConfig } = {
   appId: projectId || 'your-privy-app-id',
   config: {
     // Supported chains
@@ -30,7 +31,7 @@ export const privyConfig = {
     // Appearance
     appearance: {
       theme: 'light',
-      accentColor: 'red' as `#${string}`,
+      accentColor: '#EF4444',
     },
   },
 };
