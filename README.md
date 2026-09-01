@@ -16,7 +16,7 @@ This project is a simple starter that allows you to:
 **Included features:**
 - ✅ Wallet connection with Privy (MetaMask, embedded, etc.)
 - ✅ Data protection with iExec DataProtector
-- ✅ Multi-chain support (iExec Sidechain, Arbitrum)
+- ✅ Multi-chain support (Arbitrum One, Arbitrum Sepolia)
 - ✅ Simple and clean user interface
 - ✅ Built with React, TypeScript, and Tailwind CSS
 
@@ -54,18 +54,6 @@ Your app will be available at [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🧩 Compatible Wallets
-
-- MetaMask
-- Coinbase Wallet
-- Brave Wallet  
-- WalletConnect
-- Zerion
-
-❌ Other wallets may not work with iExec SDKs on Bellecour.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -96,7 +84,6 @@ src/
 
 ## 🌐 Supported Networks
 
-- **iExec Sidechain (Bellecour)** - Chain ID: 134
 - **Arbitrum One** - Chain ID: 42161
 - **Arbitrum Sepolia** - Chain ID: 421614
 
